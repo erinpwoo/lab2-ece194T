@@ -1,0 +1,7 @@
+<map id="chai3d::cGenericEffect" name="chai3d::cGenericEffect">
+<area shape="rect" id="node2" href="$classchai3d_1_1c_effect_magnet.html" title="This class implements a haptic magnetic effect. " alt="" coords="214,5,367,32"/>
+<area shape="rect" id="node3" href="$classchai3d_1_1c_effect_stick_slip.html" title="This class implements a haptic stick and slip effect. " alt="" coords="211,56,371,83"/>
+<area shape="rect" id="node4" href="$classchai3d_1_1c_effect_surface.html" title="This class implements a haptic surface effect. " alt="" coords="213,107,369,133"/>
+<area shape="rect" id="node5" href="$classchai3d_1_1c_effect_vibration.html" title="This class implements a haptic vibration effect. " alt="" coords="209,157,372,184"/>
+<area shape="rect" id="node6" href="$classchai3d_1_1c_effect_viscosity.html" title="This class implements a haptic viscosity effect. " alt="" coords="209,208,372,235"/>
+</map>
