@@ -54,7 +54,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		962B82461A1B350900422CAD /* 31-pointcloud.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962B82451A1B350900422CAD /* 31-pointcloud.cpp */; };
 		962B82491A1B356C00422CAD /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		962B824A1A1B357000422CAD /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		962B824B1A1B357900422CAD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
@@ -64,14 +63,6 @@
 		962B82501A1B357900422CAD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BA0B5E17B9EE8600E0E3DA /* CoreAudio.framework */; };
 		962B82511A1B357900422CAD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BA0B6217B9EEA300E0E3DA /* AudioToolbox.framework */; };
 		962B82521A1B357900422CAD /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BA0B6017B9EE9900E0E3DA /* AudioUnit.framework */; };
-		962E5E7014C52955008E447A /* 10-oring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962E5E6F14C52955008E447A /* 10-oring.cpp */; };
-		962E5E7214C52961008E447A /* 11-effects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962E5E7114C52961008E447A /* 11-effects.cpp */; };
-		962E5E7414C5296F008E447A /* 12-polygons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962E5E7314C5296F008E447A /* 12-polygons.cpp */; };
-		962E5E7614C5297B008E447A /* 20-map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962E5E7514C5297B008E447A /* 20-map.cpp */; };
-		962E5E7814C52989008E447A /* 21-object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962E5E7714C52989008E447A /* 21-object.cpp */; };
-		962E5E7A14C52996008E447A /* 22-chrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962E5E7914C52996008E447A /* 22-chrome.cpp */; };
-		962E5E7C14C529A4008E447A /* 23-tooth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962E5E7B14C529A4008E447A /* 23-tooth.cpp */; };
-		962E5E8014C529BE008E447A /* 25-sounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962E5E7F14C529BE008E447A /* 25-sounds.cpp */; };
 		962E5F1214C52C94008E447A /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		962E5F1514C52D22008E447A /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		962E5F1814C52D30008E447A /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
@@ -80,13 +71,11 @@
 		962E5F2114C52D51008E447A /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		962E5F2414C52D5B008E447A /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		962E5F2A14C52D73008E447A /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
-		9631A44A194A3F7E006569D5 /* 28-voxel-basic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9631A449194A3F7E006569D5 /* 28-voxel-basic.cpp */; };
 		9631A44D194A3FF4006569D5 /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		9631A44E194A4001006569D5 /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		9631A44F194A4013006569D5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		9631A451194A4027006569D5 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		9631A452194A402C006569D5 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
-		9653DFB014C53BF300DF969B /* 13-primitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9653DFAF14C53BF300DF969B /* 13-primitives.cpp */; };
 		9653DFB514C5583600DF969B /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		9653DFB614C5583E00DF969B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		9653DFB714C5584500DF969B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
@@ -109,13 +98,11 @@
 		9655D46717549B3100E47F24 /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		9655D46817549B3700E47F24 /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		9655D46917549B4200E47F24 /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
-		9659DA1D178E7D3400B9A6D8 /* 18-endoscope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9659DA1C178E7D3400B9A6D8 /* 18-endoscope.cpp */; };
 		9659DA20178E7D5B00B9A6D8 /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		9659DA21178E7D5F00B9A6D8 /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		9659DA22178E7D6700B9A6D8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		9659DA24178E7D7500B9A6D8 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		9659DA25178E7D7800B9A6D8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
-		965AABE617938E6200E8B4F4 /* 19-space.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 965AABE517938E6200E8B4F4 /* 19-space.cpp */; };
 		965AABE917938E8D00E8B4F4 /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		965AABEA17938EA100E8B4F4 /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		965AABEB17938EAC00E8B4F4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
@@ -145,7 +132,6 @@
 		9662C3840FC02F5400177FFC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
 		9662C3880FC02FA200177FFC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		9662C3890FC02FA700177FFC /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
-		9666252A19E64E05008B2D36 /* 30-voxel-colormap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9666252919E64E05008B2D36 /* 30-voxel-colormap.cpp */; };
 		9666252D19E64E47008B2D36 /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		9666252E19E64E55008B2D36 /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		9666252F19E64E64008B2D36 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
@@ -162,12 +148,10 @@
 		9686AB661DDE2524002C883C /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		9686AB741DDE2896002C883C /* cshader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9686AB731DDE288E002C883C /* cshader.cpp */; };
 		9686AB791DDE28BC002C883C /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
-		9686AE601592D296003609A6 /* 15-paint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9686AE5F1592D296003609A6 /* 15-paint.cpp */; };
 		9686AE651592D320003609A6 /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		9686AE661592D32A003609A6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		9686AE681592D33A003609A6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		9686AE691592D340003609A6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
-		9686AE791592D454003609A6 /* 14-textures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9686AE781592D454003609A6 /* 14-textures.cpp */; };
 		9686AE7E1592D4A1003609A6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
 		9686AE7F1592D4AC003609A6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		9686AE811592D4B6003609A6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
@@ -176,37 +160,30 @@
 		9686AE941592D54F003609A6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		9686AE961592D557003609A6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		9686AE971592D55B003609A6 /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
-		9686AE991592D574003609A6 /* 16-friction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9686AE981592D574003609A6 /* 16-friction.cpp */; };
 		9686AEAC1592D679003609A6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
 		9686AEAD1592D67D003609A6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		9686AEAF1592D68C003609A6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		9686AEB01592D691003609A6 /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
-		9686AEB21592D69F003609A6 /* 17-shading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9686AEB11592D69F003609A6 /* 17-shading.cpp */; };
-		96A2E1A1199B4EF10041B0EB /* 06-images.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96A2E1A0199B4EF10041B0EB /* 06-images.cpp */; };
 		96A2E1A6199B4F8D0041B0EB /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		96A2E1A7199B4F950041B0EB /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		96A2E1A8199B4F9C0041B0EB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		96A2E1AA199B4FA80041B0EB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		96A2E1AB199B4FAC0041B0EB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
-		96A2E1BA199B51790041B0EB /* 07-mouse-select.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96A2E1B9199B51790041B0EB /* 07-mouse-select.cpp */; };
 		96A2E1BF199B51CD0041B0EB /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		96A2E1C0199B51D10041B0EB /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		96A2E1C1199B51D50041B0EB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		96A2E1C3199B51E40041B0EB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		96A2E1C4199B51E70041B0EB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
-		96A2E1D3199B523E0041B0EB /* 08-shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96A2E1D2199B523E0041B0EB /* 08-shaders.cpp */; };
 		96A2E1D8199B528F0041B0EB /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		96A2E1D9199B52920041B0EB /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		96A2E1DA199B52950041B0EB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		96A2E1DC199B529F0041B0EB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		96A2E1DD199B52A20041B0EB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
-		96A2E1ED199B52F10041B0EB /* 09-magnets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96A2E1EB199B52E50041B0EB /* 09-magnets.cpp */; };
 		96A2E1F2199B533C0041B0EB /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		96A2E1F3199B533E0041B0EB /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		96A2E1F4199B53420041B0EB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		96A2E1F6199B53490041B0EB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		96A2E1F7199B534D0041B0EB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
-		96A2E208199B54870041B0EB /* 29-voxel-isosurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96A2E205199B54870041B0EB /* 29-voxel-isosurface.cpp */; };
 		96A2E20E199B54D70041B0EB /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		96A2E20F199B54D90041B0EB /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		96A2E210199B54DE0041B0EB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
@@ -324,7 +301,6 @@
 		96A6DD9919A9B5360049DF3D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BA0B5E17B9EE8600E0E3DA /* CoreAudio.framework */; };
 		96A6DD9A19A9B5360049DF3D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BA0B6217B9EEA300E0E3DA /* AudioToolbox.framework */; };
 		96A6DD9B19A9B5360049DF3D /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BA0B6017B9EE9900E0E3DA /* AudioUnit.framework */; };
-		96BA09DB17B9EB2800E0E3DA /* 26-video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96BA09DA17B9EB2800E0E3DA /* 26-video.cpp */; };
 		96BA09DE17B9EB8D00E0E3DA /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		96BA09DF17B9EB9400E0E3DA /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		96BA09E017B9EB9D00E0E3DA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
@@ -334,7 +310,6 @@
 		96BA0B6117B9EE9900E0E3DA /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BA0B6017B9EE9900E0E3DA /* AudioUnit.framework */; };
 		96BA0B6417B9EEB800E0E3DA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BA0B6217B9EEA300E0E3DA /* AudioToolbox.framework */; };
 		96BA0B6517B9EEEB00E0E3DA /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967EBB4011E311A7006A62E9 /* CoreServices.framework */; };
-		96BD808A1793C5FB00E941A7 /* 24-turntable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962E5E7D14C529B1008E447A /* 24-turntable.cpp */; };
 		96BD808F1793C66B00E941A7 /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		96BD80901793C67100E941A7 /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		96BD80921793C68300E941A7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
@@ -438,27 +413,22 @@
 		96D0117914E3724400446A6B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		96D0117A14E3725300446A6B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
 		96D0117B14E3725C00446A6B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
-		96D0118F14E372DA00446A6B /* 02-multi-devices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96D0118E14E372DA00446A6B /* 02-multi-devices.cpp */; };
 		96D0119214E3730A00446A6B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
 		96D0119314E3731200446A6B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		96D0119514E3731D00446A6B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		96D0119614E3732100446A6B /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
-		96D011A914E3737000446A6B /* 03-analytics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96D011A814E3737000446A6B /* 03-analytics.cpp */; };
 		96D011AE14E373A400446A6B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
 		96D011AF14E373AC00446A6B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		96D011B114E373B900446A6B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		96D011B214E373BC00446A6B /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
-		96D011C514E3740000446A6B /* 04-shapes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96D011C414E3740000446A6B /* 04-shapes.cpp */; };
 		96D011C814E3741B00446A6B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
 		96D011C914E3742000446A6B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		96D011CB14E3742C00446A6B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		96D011CC14E3742F00446A6B /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
-		96D011EE14E374B000446A6B /* 05-fonts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96D011ED14E374B000446A6B /* 05-fonts.cpp */; };
 		96D011F114E374D800446A6B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
 		96D011F214E374DC00446A6B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		96D011F414E374E500446A6B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		96D011F514E374E800446A6B /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
-		96FBA067192DDA88003D819F /* 27-multiframes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96FBA066192DDA88003D819F /* 27-multiframes.cpp */; };
 		96FBA06A192DDABF003D819F /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5F0414C52C27008E447A /* libchai3d.a */; };
 		96FBA06B192DDACB003D819F /* libdrd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E9035615FFD28E0023D8DE /* libdrd.a */; };
 		96FBA06C192DDAD1003D819F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
@@ -1178,25 +1148,11 @@
 
 /* Begin PBXFileReference section */
 		962B823E1A1B34E200422CAD /* 31-pointcloud */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "31-pointcloud"; sourceTree = BUILT_PRODUCTS_DIR; };
-		962B82451A1B350900422CAD /* 31-pointcloud.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "31-pointcloud.cpp"; path = "examples/GLFW/31-pointcloud/31-pointcloud.cpp"; sourceTree = SOURCE_ROOT; };
-		962E5E6F14C52955008E447A /* 10-oring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "10-oring.cpp"; path = "examples/GLFW/10-oring/10-oring.cpp"; sourceTree = "<group>"; };
-		962E5E7114C52961008E447A /* 11-effects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "11-effects.cpp"; path = "examples/GLFW/11-effects/11-effects.cpp"; sourceTree = "<group>"; };
-		962E5E7314C5296F008E447A /* 12-polygons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "12-polygons.cpp"; path = "examples/GLFW/12-polygons/12-polygons.cpp"; sourceTree = "<group>"; };
-		962E5E7514C5297B008E447A /* 20-map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "20-map.cpp"; path = "examples/GLFW/20-map/20-map.cpp"; sourceTree = "<group>"; };
-		962E5E7714C52989008E447A /* 21-object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "21-object.cpp"; path = "examples/GLFW/21-object/21-object.cpp"; sourceTree = "<group>"; };
-		962E5E7914C52996008E447A /* 22-chrome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "22-chrome.cpp"; path = "examples/GLFW/22-chrome/22-chrome.cpp"; sourceTree = "<group>"; };
-		962E5E7B14C529A4008E447A /* 23-tooth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "23-tooth.cpp"; path = "examples/GLFW/23-tooth/23-tooth.cpp"; sourceTree = "<group>"; };
-		962E5E7D14C529B1008E447A /* 24-turntable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "24-turntable.cpp"; path = "examples/GLFW/24-turntable/24-turntable.cpp"; sourceTree = "<group>"; };
-		962E5E7F14C529BE008E447A /* 25-sounds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "25-sounds.cpp"; path = "examples/GLFW/25-sounds/25-sounds.cpp"; sourceTree = "<group>"; };
 		962E5EEC14C52C26008E447A /* libchai3d.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = libchai3d.xcodeproj; sourceTree = "<group>"; };
 		9631A43F194A3F4F006569D5 /* 28-voxel-basic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "28-voxel-basic"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9631A449194A3F7E006569D5 /* 28-voxel-basic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "28-voxel-basic.cpp"; path = "examples/GLFW/28-voxel-basic/28-voxel-basic.cpp"; sourceTree = "<group>"; };
 		9653DFA514C53BCE00DF969B /* 13-primitives */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "13-primitives"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9653DFAF14C53BF300DF969B /* 13-primitives.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "13-primitives.cpp"; path = "examples/GLFW/13-primitives/13-primitives.cpp"; sourceTree = SOURCE_ROOT; };
 		9659DA13178E7D0200B9A6D8 /* 18-endoscope */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "18-endoscope"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9659DA1C178E7D3400B9A6D8 /* 18-endoscope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "18-endoscope.cpp"; path = "examples/GLFW/18-endoscope/18-endoscope.cpp"; sourceTree = SOURCE_ROOT; };
 		965AABDC17938E0500E8B4F4 /* 19-space */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "19-space"; sourceTree = BUILT_PRODUCTS_DIR; };
-		965AABE517938E6200E8B4F4 /* 19-space.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "19-space.cpp"; path = "examples/GLFW/19-space/19-space.cpp"; sourceTree = SOURCE_ROOT; };
 		9662C1380FC01BFF00177FFC /* GLFW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLFW.framework; path = System/Library/Frameworks/GLFW.framework; sourceTree = SDKROOT; };
 		9662C13C0FC01C0D00177FFC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		9662C1470FC01C9000177FFC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -1210,7 +1166,6 @@
 		9662C3450FC02D7600177FFC /* 23-tooth */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "23-tooth"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9662C37C0FC02F4100177FFC /* 25-sounds */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "25-sounds"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9666252219E64DBE008B2D36 /* 30-voxel-colormap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "30-voxel-colormap"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9666252919E64E05008B2D36 /* 30-voxel-colormap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "30-voxel-colormap.cpp"; path = "examples/GLFW/30-voxel-colormap/30-voxel-colormap.cpp"; sourceTree = SOURCE_ROOT; };
 		967EBB4011E311A7006A62E9 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		9686AB451DDE2311002C883C /* cfont */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cfont; sourceTree = BUILT_PRODUCTS_DIR; };
 		9686AB4C1DDE2335002C883C /* cfont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cfont.cpp; path = utils/CLI/cfont/cfont.cpp; sourceTree = SOURCE_ROOT; };
@@ -1219,25 +1174,15 @@
 		9686AB6C1DDE2875002C883C /* cshader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cshader; sourceTree = BUILT_PRODUCTS_DIR; };
 		9686AB731DDE288E002C883C /* cshader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cshader.cpp; path = utils/CLI/cshader/cshader.cpp; sourceTree = SOURCE_ROOT; };
 		9686AE551592D262003609A6 /* 15-paint */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "15-paint"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9686AE5F1592D296003609A6 /* 15-paint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "15-paint.cpp"; path = "examples/GLFW/15-paint/15-paint.cpp"; sourceTree = "<group>"; };
 		9686AE6E1592D439003609A6 /* 14-textures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "14-textures"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9686AE781592D454003609A6 /* 14-textures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "14-textures.cpp"; path = "examples/GLFW/14-textures/14-textures.cpp"; sourceTree = SOURCE_ROOT; };
 		9686AE871592D52F003609A6 /* 16-friction */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "16-friction"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9686AE981592D574003609A6 /* 16-friction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "16-friction.cpp"; path = "examples/GLFW/16-friction/16-friction.cpp"; sourceTree = SOURCE_ROOT; };
 		9686AEA01592D635003609A6 /* 17-shading */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "17-shading"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9686AEB11592D69F003609A6 /* 17-shading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "17-shading.cpp"; path = "examples/GLFW/17-shading/17-shading.cpp"; sourceTree = SOURCE_ROOT; };
 		96A2E197199B4EB40041B0EB /* 06-images */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "06-images"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96A2E1A0199B4EF10041B0EB /* 06-images.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "06-images.cpp"; path = "examples/GLFW/06-images/06-images.cpp"; sourceTree = SOURCE_ROOT; };
 		96A2E1B0199B51360041B0EB /* 07-mouse-select */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "07-mouse-select"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96A2E1B9199B51790041B0EB /* 07-mouse-select.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "07-mouse-select.cpp"; path = "examples/GLFW/07-mouse-select/07-mouse-select.cpp"; sourceTree = SOURCE_ROOT; };
 		96A2E1C9199B52140041B0EB /* 08-shaders */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "08-shaders"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96A2E1D2199B523E0041B0EB /* 08-shaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "08-shaders.cpp"; path = "examples/GLFW/08-shaders/08-shaders.cpp"; sourceTree = SOURCE_ROOT; };
 		96A2E1E2199B52C40041B0EB /* 09-magnets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "09-magnets"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96A2E1EB199B52E50041B0EB /* 09-magnets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "09-magnets.cpp"; path = "examples/GLFW/09-magnets/09-magnets.cpp"; sourceTree = SOURCE_ROOT; };
 		96A2E1FC199B54380041B0EB /* 29-voxel-isosurface */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "29-voxel-isosurface"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96A2E205199B54870041B0EB /* 29-voxel-isosurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "29-voxel-isosurface.cpp"; path = "examples/GLFW/29-voxel-isosurface/29-voxel-isosurface.cpp"; sourceTree = SOURCE_ROOT; };
 		96BA09D017B9EAD800E0E3DA /* 26-video */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "26-video"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96BA09DA17B9EB2800E0E3DA /* 26-video.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "26-video.cpp"; path = "examples/GLFW/26-video/26-video.cpp"; sourceTree = "<group>"; };
 		96BA0B5E17B9EE8600E0E3DA /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		96BA0B6017B9EE9900E0E3DA /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		96BA0B6217B9EEA300E0E3DA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -1248,16 +1193,11 @@
 		96D0116914E3713C00446A6B /* 01-mydevice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "01-mydevice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D0117414E3720B00446A6B /* 01-mydevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "01-mydevice.cpp"; path = "examples/GLFW/01-mydevice/01-mydevice.cpp"; sourceTree = "<group>"; };
 		96D0118414E372C600446A6B /* 02-multi-devices */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "02-multi-devices"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96D0118E14E372DA00446A6B /* 02-multi-devices.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "02-multi-devices.cpp"; path = "examples/GLFW/02-multi-devices/02-multi-devices.cpp"; sourceTree = "<group>"; };
 		96D0119D14E3735000446A6B /* 03-analytics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "03-analytics"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96D011A814E3737000446A6B /* 03-analytics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "03-analytics.cpp"; path = "examples/GLFW/03-analytics/03-analytics.cpp"; sourceTree = "<group>"; };
 		96D011B914E373DB00446A6B /* 04-shapes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "04-shapes"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96D011C414E3740000446A6B /* 04-shapes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "04-shapes.cpp"; path = "examples/GLFW/04-shapes/04-shapes.cpp"; sourceTree = "<group>"; };
 		96D011E214E3749100446A6B /* 05-fonts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "05-fonts"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96D011ED14E374B000446A6B /* 05-fonts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "05-fonts.cpp"; path = "examples/GLFW/05-fonts/05-fonts.cpp"; sourceTree = "<group>"; };
 		96E9035615FFD28E0023D8DE /* libdrd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdrd.a; path = external/DHD/lib/mac/libdrd.a; sourceTree = "<group>"; };
 		96FBA05C192DDA04003D819F /* 27-multiframes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "27-multiframes"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96FBA066192DDA88003D819F /* 27-multiframes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "27-multiframes.cpp"; path = "examples/GLFW/27-multiframes/27-multiframes.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1881,7 +1821,7 @@
 		08FB7794FE84155DC02AAC07 /* chai3d */ = {
 			isa = PBXGroup;
 			children = (
-				9662C0EB0FC0182300177FFC /* Examples */,
+				96D0117314E371F000446A6B /* 01-mydevice */,
 				9662C1440FC01C3B00177FFC /* External */,
 				96CB02981D9C5F48008D07F6 /* Extras */,
 				9662C1530FC01D9100177FFC /* Frameworks */,
@@ -1933,90 +1873,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		962B823F1A1B34E200422CAD /* 31-pointcloud */ = {
-			isa = PBXGroup;
-			children = (
-				962B82451A1B350900422CAD /* 31-pointcloud.cpp */,
-			);
-			path = "31-pointcloud";
-			sourceTree = "<group>";
-		};
 		962E5EED14C52C26008E447A /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				962E5F0414C52C27008E447A /* libchai3d.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9631A448194A3F65006569D5 /* 28-voxel-basic */ = {
-			isa = PBXGroup;
-			children = (
-				9631A449194A3F7E006569D5 /* 28-voxel-basic.cpp */,
-			);
-			name = "28-voxel-basic";
-			sourceTree = "<group>";
-		};
-		9653DFA714C53BCE00DF969B /* 13-primitives */ = {
-			isa = PBXGroup;
-			children = (
-				9653DFAF14C53BF300DF969B /* 13-primitives.cpp */,
-			);
-			path = "13-primitives";
-			sourceTree = "<group>";
-		};
-		9659DA14178E7D0200B9A6D8 /* 18-endoscope */ = {
-			isa = PBXGroup;
-			children = (
-				9659DA1C178E7D3400B9A6D8 /* 18-endoscope.cpp */,
-			);
-			path = "18-endoscope";
-			sourceTree = "<group>";
-		};
-		965AABDD17938E0500E8B4F4 /* 19-space */ = {
-			isa = PBXGroup;
-			children = (
-				965AABE517938E6200E8B4F4 /* 19-space.cpp */,
-			);
-			path = "19-space";
-			sourceTree = "<group>";
-		};
-		9662C0EB0FC0182300177FFC /* Examples */ = {
-			isa = PBXGroup;
-			children = (
-				96D0117314E371F000446A6B /* 01-mydevice */,
-				96D0117F14E3729900446A6B /* 02-multi-devices */,
-				96D011A714E3735D00446A6B /* 03-analytics */,
-				96D011C314E373E500446A6B /* 04-shapes */,
-				96D011EC14E3749F00446A6B /* 05-fonts */,
-				96A2E198199B4EB40041B0EB /* 06-images */,
-				96A2E1B1199B51360041B0EB /* 07-mouse-select */,
-				96A2E1CA199B52140041B0EB /* 08-shaders */,
-				96A2E1E3199B52C40041B0EB /* 09-magnets */,
-				9662C2AF0FC024FD00177FFC /* 10-oring */,
-				9662C2E70FC0289300177FFC /* 11-effects */,
-				9662C2E80FC0289900177FFC /* 12-polygons */,
-				9653DFA714C53BCE00DF969B /* 13-primitives */,
-				9686AE701592D43A003609A6 /* 14-textures */,
-				9686AE501592D1F5003609A6 /* 15-paint */,
-				9686AE891592D52F003609A6 /* 16-friction */,
-				9686AEA21592D635003609A6 /* 17-shading */,
-				9659DA14178E7D0200B9A6D8 /* 18-endoscope */,
-				965AABDD17938E0500E8B4F4 /* 19-space */,
-				9662C3010FC02A9D00177FFC /* 20-map */,
-				9662C3180FC02BE200177FFC /* 21-object */,
-				9662C32E0FC02C9B00177FFC /* 22-chrome */,
-				9662C3510FC02DCB00177FFC /* 23-tooth */,
-				9699767D0FC0D89B003AD5C7 /* 24-turntable */,
-				9662C3870FC02F9000177FFC /* 25-sounds */,
-				96BA09D917B9EB0E00E0E3DA /* 26-video */,
-				96FBA065192DDA71003D819F /* 27-multiframes */,
-				9631A448194A3F65006569D5 /* 28-voxel-basic */,
-				96A2E1FD199B54380041B0EB /* 29-voxel-isosurface */,
-				9666252319E64DBE008B2D36 /* 30-voxel-colormap */,
-				962B823F1A1B34E200422CAD /* 31-pointcloud */,
-			);
-			name = Examples;
 			sourceTree = "<group>";
 		};
 		9662C1440FC01C3B00177FFC /* External */ = {
@@ -2042,78 +1904,6 @@
 				9662C13C0FC01C0D00177FFC /* OpenGL.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9662C2AF0FC024FD00177FFC /* 10-oring */ = {
-			isa = PBXGroup;
-			children = (
-				962E5E6F14C52955008E447A /* 10-oring.cpp */,
-			);
-			name = "10-oring";
-			sourceTree = "<group>";
-		};
-		9662C2E70FC0289300177FFC /* 11-effects */ = {
-			isa = PBXGroup;
-			children = (
-				962E5E7114C52961008E447A /* 11-effects.cpp */,
-			);
-			name = "11-effects";
-			sourceTree = "<group>";
-		};
-		9662C2E80FC0289900177FFC /* 12-polygons */ = {
-			isa = PBXGroup;
-			children = (
-				962E5E7314C5296F008E447A /* 12-polygons.cpp */,
-			);
-			name = "12-polygons";
-			sourceTree = "<group>";
-		};
-		9662C3010FC02A9D00177FFC /* 20-map */ = {
-			isa = PBXGroup;
-			children = (
-				962E5E7514C5297B008E447A /* 20-map.cpp */,
-			);
-			name = "20-map";
-			sourceTree = "<group>";
-		};
-		9662C3180FC02BE200177FFC /* 21-object */ = {
-			isa = PBXGroup;
-			children = (
-				962E5E7714C52989008E447A /* 21-object.cpp */,
-			);
-			name = "21-object";
-			sourceTree = "<group>";
-		};
-		9662C32E0FC02C9B00177FFC /* 22-chrome */ = {
-			isa = PBXGroup;
-			children = (
-				962E5E7914C52996008E447A /* 22-chrome.cpp */,
-			);
-			name = "22-chrome";
-			sourceTree = "<group>";
-		};
-		9662C3510FC02DCB00177FFC /* 23-tooth */ = {
-			isa = PBXGroup;
-			children = (
-				962E5E7B14C529A4008E447A /* 23-tooth.cpp */,
-			);
-			name = "23-tooth";
-			sourceTree = "<group>";
-		};
-		9662C3870FC02F9000177FFC /* 25-sounds */ = {
-			isa = PBXGroup;
-			children = (
-				962E5E7F14C529BE008E447A /* 25-sounds.cpp */,
-			);
-			name = "25-sounds";
-			sourceTree = "<group>";
-		};
-		9666252319E64DBE008B2D36 /* 30-voxel-colormap */ = {
-			isa = PBXGroup;
-			children = (
-				9666252919E64E05008B2D36 /* 30-voxel-colormap.cpp */,
-			);
-			path = "30-voxel-colormap";
 			sourceTree = "<group>";
 		};
 		9686AB401DDE22D2002C883C /* Utils */ = {
@@ -2150,94 +1940,6 @@
 			path = cshader;
 			sourceTree = "<group>";
 		};
-		9686AE501592D1F5003609A6 /* 15-paint */ = {
-			isa = PBXGroup;
-			children = (
-				9686AE5F1592D296003609A6 /* 15-paint.cpp */,
-			);
-			name = "15-paint";
-			sourceTree = "<group>";
-		};
-		9686AE701592D43A003609A6 /* 14-textures */ = {
-			isa = PBXGroup;
-			children = (
-				9686AE781592D454003609A6 /* 14-textures.cpp */,
-			);
-			path = "14-textures";
-			sourceTree = "<group>";
-		};
-		9686AE891592D52F003609A6 /* 16-friction */ = {
-			isa = PBXGroup;
-			children = (
-				9686AE981592D574003609A6 /* 16-friction.cpp */,
-			);
-			path = "16-friction";
-			sourceTree = "<group>";
-		};
-		9686AEA21592D635003609A6 /* 17-shading */ = {
-			isa = PBXGroup;
-			children = (
-				9686AEB11592D69F003609A6 /* 17-shading.cpp */,
-			);
-			path = "17-shading";
-			sourceTree = "<group>";
-		};
-		9699767D0FC0D89B003AD5C7 /* 24-turntable */ = {
-			isa = PBXGroup;
-			children = (
-				962E5E7D14C529B1008E447A /* 24-turntable.cpp */,
-			);
-			name = "24-turntable";
-			sourceTree = "<group>";
-		};
-		96A2E198199B4EB40041B0EB /* 06-images */ = {
-			isa = PBXGroup;
-			children = (
-				96A2E1A0199B4EF10041B0EB /* 06-images.cpp */,
-			);
-			path = "06-images";
-			sourceTree = "<group>";
-		};
-		96A2E1B1199B51360041B0EB /* 07-mouse-select */ = {
-			isa = PBXGroup;
-			children = (
-				96A2E1B9199B51790041B0EB /* 07-mouse-select.cpp */,
-			);
-			path = "07-mouse-select";
-			sourceTree = "<group>";
-		};
-		96A2E1CA199B52140041B0EB /* 08-shaders */ = {
-			isa = PBXGroup;
-			children = (
-				96A2E1D2199B523E0041B0EB /* 08-shaders.cpp */,
-			);
-			path = "08-shaders";
-			sourceTree = "<group>";
-		};
-		96A2E1E3199B52C40041B0EB /* 09-magnets */ = {
-			isa = PBXGroup;
-			children = (
-				96A2E1EB199B52E50041B0EB /* 09-magnets.cpp */,
-			);
-			path = "09-magnets";
-			sourceTree = "<group>";
-		};
-		96A2E1FD199B54380041B0EB /* 29-voxel-isosurface */ = {
-			isa = PBXGroup;
-			children = (
-				96A2E205199B54870041B0EB /* 29-voxel-isosurface.cpp */,
-			);
-			path = "29-voxel-isosurface";
-			sourceTree = "<group>";
-		};
-		96BA09D917B9EB0E00E0E3DA /* 26-video */ = {
-			isa = PBXGroup;
-			children = (
-				96BA09DA17B9EB2800E0E3DA /* 26-video.cpp */,
-			);
-			name = "26-video";
-			sourceTree = "<group>";
-		};
 		96CB02981D9C5F48008D07F6 /* Extras */ = {
 			isa = PBXGroup;
 			children = (
@@ -2260,46 +1962,6 @@
 				96D0117414E3720B00446A6B /* 01-mydevice.cpp */,
 			);
 			name = "01-mydevice";
-			sourceTree = "<group>";
-		};
-		96D0117F14E3729900446A6B /* 02-multi-devices */ = {
-			isa = PBXGroup;
-			children = (
-				96D0118E14E372DA00446A6B /* 02-multi-devices.cpp */,
-			);
-			name = "02-multi-devices";
-			sourceTree = "<group>";
-		};
-		96D011A714E3735D00446A6B /* 03-analytics */ = {
-			isa = PBXGroup;
-			children = (
-				96D011A814E3737000446A6B /* 03-analytics.cpp */,
-			);
-			name = "03-analytics";
-			sourceTree = "<group>";
-		};
-		96D011C314E373E500446A6B /* 04-shapes */ = {
-			isa = PBXGroup;
-			children = (
-				96D011C414E3740000446A6B /* 04-shapes.cpp */,
-			);
-			name = "04-shapes";
-			sourceTree = "<group>";
-		};
-		96D011EC14E3749F00446A6B /* 05-fonts */ = {
-			isa = PBXGroup;
-			children = (
-				96D011ED14E374B000446A6B /* 05-fonts.cpp */,
-			);
-			name = "05-fonts";
-			sourceTree = "<group>";
-		};
-		96FBA065192DDA71003D819F /* 27-multiframes */ = {
-			isa = PBXGroup;
-			children = (
-				96FBA066192DDA88003D819F /* 27-multiframes.cpp */,
-			);
-			name = "27-multiframes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3506,7 +3168,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962B82461A1B350900422CAD /* 31-pointcloud.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3514,7 +3175,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9631A44A194A3F7E006569D5 /* 28-voxel-basic.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3522,7 +3182,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9653DFB014C53BF300DF969B /* 13-primitives.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3530,7 +3189,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9659DA1D178E7D3400B9A6D8 /* 18-endoscope.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3538,7 +3196,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				965AABE617938E6200E8B4F4 /* 19-space.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3546,7 +3203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962E5E7014C52955008E447A /* 10-oring.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3554,7 +3210,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962E5E7214C52961008E447A /* 11-effects.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3562,7 +3217,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962E5E7414C5296F008E447A /* 12-polygons.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3570,7 +3224,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962E5E7614C5297B008E447A /* 20-map.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3578,7 +3231,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962E5E7814C52989008E447A /* 21-object.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3586,7 +3238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962E5E7A14C52996008E447A /* 22-chrome.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3594,7 +3245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962E5E7C14C529A4008E447A /* 23-tooth.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3602,7 +3252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962E5E8014C529BE008E447A /* 25-sounds.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3610,7 +3259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9666252A19E64E05008B2D36 /* 30-voxel-colormap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3642,7 +3290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9686AE601592D296003609A6 /* 15-paint.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3650,7 +3297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9686AE791592D454003609A6 /* 14-textures.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3658,7 +3304,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9686AE991592D574003609A6 /* 16-friction.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3666,7 +3311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9686AEB21592D69F003609A6 /* 17-shading.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3674,7 +3318,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A2E1A1199B4EF10041B0EB /* 06-images.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3682,7 +3325,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A2E1BA199B51790041B0EB /* 07-mouse-select.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3690,7 +3332,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A2E1D3199B523E0041B0EB /* 08-shaders.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3698,7 +3339,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A2E1ED199B52F10041B0EB /* 09-magnets.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3706,7 +3346,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A2E208199B54870041B0EB /* 29-voxel-isosurface.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3714,7 +3353,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96BA09DB17B9EB2800E0E3DA /* 26-video.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3722,7 +3360,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96BD808A1793C5FB00E941A7 /* 24-turntable.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3738,7 +3375,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96D0118F14E372DA00446A6B /* 02-multi-devices.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3746,7 +3382,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96D011A914E3737000446A6B /* 03-analytics.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3754,7 +3389,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96D011C514E3740000446A6B /* 04-shapes.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3762,7 +3396,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96D011EE14E374B000446A6B /* 05-fonts.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3770,7 +3403,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96FBA067192DDA88003D819F /* 27-multiframes.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
