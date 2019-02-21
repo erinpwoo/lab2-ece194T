@@ -45,6 +45,8 @@
 #include "chai3d.h"
 //------------------------------------------------------------------------------
 #include <GLFW/glfw3.h>
+#include <fstream>
+
 //------------------------------------------------------------------------------
 using namespace chai3d;
 using namespace std;
@@ -73,6 +75,9 @@ bool mirroredDisplay = false;
 //------------------------------------------------------------------------------
 // DECLARED VARIABLES
 //------------------------------------------------------------------------------
+
+ofstream fileOutStream; // record output
+cPrecisionClock aTimer; // capture timing information
 
 // a world that contains all objects of the virtual environment
 cWorld* world;
@@ -191,6 +196,13 @@ int main(int argc, char* argv[])
     // INITIALIZATION
     //--------------------------------------------------------------------------
 
+    std::string posiFileName = "CursorPosition.csv";
+    fileOutStream.open(posiFileName);
+    aTimer.reset();     // start the timer
+    aTimer.start();
+    
+    
+    
     cout << endl;
     cout << "-----------------------------------" << endl;
     cout << "CHAI3D" << endl;
@@ -437,6 +449,10 @@ int main(int argc, char* argv[])
     // terminate GLFW library
     glfwTerminate();
 
+    
+    aTimer.stop(); // stop timer
+    fileOutStream.close();
+    
     // exit
     return 0;
 }
@@ -595,8 +611,14 @@ void updateGraphics(void)
 
 //------------------------------------------------------------------------------
 
-void updateHaptics(void)
+void updateHaptics(void) //add recorded data capturing here
 {
+    
+    cVector3d newPosition;
+    hapticDevice->getPosition(newPosition);
+    fileOutStream << newPosition.x() << "," << aTimer.getCurrentTimeSeconds() << std::endl;
+    
+    
     // simulation in now running
     simulationRunning  = true;
     simulationFinished = false;
@@ -705,7 +727,8 @@ void updateHaptics(void)
         if (useForceField)
         {
             // compute linear force
-            double Kp = 25; // [N/m]
+            //ADJUSTING KP: AFFECTS STIFFNESS OF DEVICE AND HOW IT'S RESISTANCE TO BEING MOVED FROM ITS ORIGINAL POSITION (0,0,0)
+            double Kp = 20; // [N/m]
             cVector3d forceField = Kp * (desiredPosition - position);
             force.add(forceField);
 
@@ -721,6 +744,7 @@ void updateHaptics(void)
         // apply damping term
         if (useDamping)
         {
+            //DAMPING:defined as the ability to resist oscillations.
             cHapticDeviceInfo info = hapticDevice->getSpecifications();
 
             // compute linear damping force
