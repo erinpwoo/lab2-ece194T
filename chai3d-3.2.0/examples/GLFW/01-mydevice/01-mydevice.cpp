@@ -41,6 +41,16 @@
 */
 //==============================================================================
 
+
+
+//CREATIVE EXPLORATION TO-DO:
+    //1. Add paddle to move with device within world.
+        //  - set x, y, z boundaries of where the paddle can move.
+    //2. Add colliding ball/movement parameters.
+    //3. Add haptic force feedback.
+    //4. Add score/gameplay
+
+
 //------------------------------------------------------------------------------
 #include "chai3d.h"
 //------------------------------------------------------------------------------
@@ -89,7 +99,7 @@ cCamera* camera;
 cDirectionalLight *light;
 
 // a small sphere (cursor) representing the haptic device 
-cShapeSphere* cursor;
+cShapeBox* cursor;
 
 // a line representing the velocity vector of the haptic device
 cShapeLine* velocity;
@@ -306,7 +316,9 @@ int main(int argc, char* argv[])
     // create a camera and insert it into the virtual world
     camera = new cCamera(world);
     world->addChild(camera);
-
+    
+    camera->setOrthographicView(2.0);
+    
     // position and orient the camera
     camera->set( cVector3d (0.5, 0.0, 0.0),    // camera position (eye)
                  cVector3d (0.0, 0.0, 0.0),    // look at position (target)
@@ -338,18 +350,22 @@ int main(int argc, char* argv[])
     light->setDir(-1.0, 0.0, 0.0);
 
     // create a sphere (cursor) to represent the haptic device
-    cursor = new cShapeSphere(0.01);
+    cursor = new cShapeBox(0.1, 0.25, 0.03);
 
     // insert cursor inside world
     world->addChild(cursor);
+    
+    //sets paddle stiffness
+    cursor->m_material->setStiffness(500);
 
+    /*
     // create small line to illustrate the velocity of the haptic device
     velocity = new cShapeLine(cVector3d(0,0,0), 
                               cVector3d(0,0,0));
 
     // insert line inside world
     world->addChild(velocity);
-
+     */
 
     //--------------------------------------------------------------------------
     // HAPTIC DEVICE
@@ -617,7 +633,7 @@ void updateHaptics(void) //add recorded data capturing here
     cVector3d newPosition;
     hapticDevice->getPosition(newPosition);
     fileOutStream << newPosition.x() << "," << aTimer.getCurrentTimeSeconds() << std::endl;
-    
+    std::cout << newPosition.x() << "," << aTimer.getCurrentTimeSeconds() << std::endl;
     
     // simulation in now running
     simulationRunning  = true;
@@ -672,9 +688,11 @@ void updateHaptics(void) //add recorded data capturing here
         /////////////////////////////////////////////////////////////////////
        
         // update arrow
+        /*
         velocity->m_pointA = position;
         velocity->m_pointB = cAdd(position, linearVelocity);
-
+         */
+        
         // update position and orientation of cursor
         cursor->setLocalPos(position);
         cursor->setLocalRot(rotation);

@@ -434,6 +434,7 @@
 		96FBA06C192DDAD1003D819F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C1470FC01C9000177FFC /* CoreFoundation.framework */; };
 		96FBA06E192DDADE003D819F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		96FBA06F192DDAE2003D819F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
+		AF6F0E52221F6F09004D6B19 /* 01-mydevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96D0117414E3720B00446A6B /* 01-mydevice.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3304,6 +3305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6F0E52221F6F09004D6B19 /* 01-mydevice.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
