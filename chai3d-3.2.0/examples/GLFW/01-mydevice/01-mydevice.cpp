@@ -53,6 +53,7 @@
 
 //------------------------------------------------------------------------------
 #include "chai3d.h"
+#include "util.hpp"
 //------------------------------------------------------------------------------
 #include <GLFW/glfw3.h>
 #include <fstream>
@@ -101,8 +102,10 @@ cDirectionalLight *light;
 // a small sphere (cursor) representing the haptic device 
 cShapeBox* cursor;
 
+cShapeSphere* ball;
+
 // a line representing the velocity vector of the haptic device
-cShapeLine* velocity;
+//cShapeLine* velocity;
 
 // a haptic device handler
 cHapticDeviceHandler* handler;
@@ -357,6 +360,11 @@ int main(int argc, char* argv[])
     
     //sets paddle stiffness
     cursor->m_material->setStiffness(500);
+    
+    ball = new cShapeSphere(.02);
+    world -> addChild(ball);
+    
+    ball->setLocalPos(0, 0, .5);
 
     /*
     // create small line to illustrate the velocity of the haptic device
@@ -729,8 +737,8 @@ void updateHaptics(void) //add recorded data capturing here
         /////////////////////////////////////////////////////////////////////
 
         // desired position
-        cVector3d desiredPosition;
-        desiredPosition.set(0.0, 0.0, 0.0);
+        cVector3d desiredPosition;  //set desired position to position detected by device
+        desiredPosition = newPosition;
 
         // desired orientation
         cMatrix3d desiredRotation;

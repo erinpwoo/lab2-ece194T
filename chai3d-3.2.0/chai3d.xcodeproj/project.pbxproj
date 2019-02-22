@@ -435,6 +435,7 @@
 		96FBA06E192DDADE003D819F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C14B0FC01CB000177FFC /* IOKit.framework */; };
 		96FBA06F192DDAE2003D819F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C13C0FC01C0D00177FFC /* OpenGL.framework */; };
 		AF6F0E52221F6F09004D6B19 /* 01-mydevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96D0117414E3720B00446A6B /* 01-mydevice.cpp */; };
+		AF6F0E57221F7A80004D6B19 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF6F0E55221F7A80004D6B19 /* util.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1199,6 +1200,8 @@
 		96D011E214E3749100446A6B /* 05-fonts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "05-fonts"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E9035615FFD28E0023D8DE /* libdrd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdrd.a; path = external/DHD/lib/mac/libdrd.a; sourceTree = "<group>"; };
 		96FBA05C192DDA04003D819F /* 27-multiframes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "27-multiframes"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6F0E55221F7A80004D6B19 /* util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = "examples/GLFW/01-mydevice/util.cpp"; sourceTree = "<group>"; };
+		AF6F0E56221F7A80004D6B19 /* util.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = util.hpp; path = "examples/GLFW/01-mydevice/util.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1961,6 +1964,8 @@
 			isa = PBXGroup;
 			children = (
 				96D0117414E3720B00446A6B /* 01-mydevice.cpp */,
+				AF6F0E55221F7A80004D6B19 /* util.cpp */,
+				AF6F0E56221F7A80004D6B19 /* util.hpp */,
 			);
 			name = "01-mydevice";
 			sourceTree = "<group>";
@@ -3370,6 +3375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96CB02EF1D9C62AE008D07F6 /* 01-mydevice.cpp in Sources */,
+				AF6F0E57221F7A80004D6B19 /* util.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
