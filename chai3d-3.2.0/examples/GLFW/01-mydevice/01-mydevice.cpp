@@ -323,7 +323,7 @@ int main(int argc, char* argv[])
     camera->setOrthographicView(2.0);
     
     // position and orient the camera
-    camera->set( cVector3d (0.5, 0.0, 0.0),    // camera position (eye)
+    camera->set( cVector3d (.5, 0.0, 0.0),    // camera position (eye)
                  cVector3d (0.0, 0.0, 0.0),    // look at position (target)
                  cVector3d (0.0, 0.0, 1.0));   // direction of the (up) vector
 
@@ -352,15 +352,16 @@ int main(int argc, char* argv[])
     // define direction of light beam
     light->setDir(-1.0, 0.0, 0.0);
 
-    // create a sphere (cursor) to represent the haptic device
+    // create a box (cursor) to represent the haptic device
     cursor = new cShapeBox(0.1, 0.25, 0.03);
-
+    cursor->setLocalPos(0,0,-5);
     // insert cursor inside world
     world->addChild(cursor);
     
     //sets paddle stiffness
     cursor->m_material->setStiffness(500);
     
+    //adding ball to scene
     ball = new cShapeSphere(.02);
     world -> addChild(ball);
     
@@ -702,7 +703,23 @@ void updateHaptics(void) //add recorded data capturing here
          */
         
         // update position and orientation of cursor
-        cursor->setLocalPos(position);
+        cVector3d *pos = new cVector3d(position);
+        double x = pos->x();
+        
+        //z is (y), y is (x), x is (z)
+        double y = pos->y();
+        double z = pos->z();
+        if (position.z() > -.010) {
+            z = -.01;
+        }
+        if (position.y() < -.048) {
+            y = -.048;
+        }
+        if (position.z() < -.025) {
+            z = -.025;
+        }
+        pos->set(x, y, z);
+        cursor->setLocalPos(x*20, y*20, z*20);
         cursor->setLocalRot(rotation);
 
         // adjust the  color of the cursor according to the status of
