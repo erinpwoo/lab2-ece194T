@@ -639,10 +639,6 @@ void updateGraphics(void)
 void updateHaptics(void) //add recorded data capturing here
 {
     
-    cVector3d newPosition;
-    hapticDevice->getPosition(newPosition);
-    fileOutStream << newPosition.x() << "," << aTimer.getCurrentTimeSeconds() << std::endl;
-    std::cout << newPosition.x() << "," << aTimer.getCurrentTimeSeconds() << std::endl;
     
     // simulation in now running
     simulationRunning  = true;
@@ -691,7 +687,14 @@ void updateHaptics(void) //add recorded data capturing here
         hapticDevice->getUserSwitch(2, button2);
         hapticDevice->getUserSwitch(3, button3);
 
-
+        
+        //export to csv file:
+        
+        cVector3d newPosition;
+        hapticDevice->getPosition(newPosition);
+        fileOutStream << newPosition.x() << "," << aTimer.getCurrentTimeSeconds() << std::endl;
+        std::cout << newPosition.x() << "," << aTimer.getCurrentTimeSeconds() << std::endl;
+        
         /////////////////////////////////////////////////////////////////////
         // UPDATE 3D CURSOR MODEL
         /////////////////////////////////////////////////////////////////////
