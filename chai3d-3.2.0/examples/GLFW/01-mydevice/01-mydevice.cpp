@@ -163,11 +163,11 @@ int height = 0;
 int swapInterval = 1;
 
 /*BALL SHTUFF*/
-double velocity = 1.5;
-double wallleft = .048;
-double wallright = -.048;
-double walltop = .03;
-double wallbottom = -.03;
+double velocity = .5;
+double wallleft = 1;
+double wallright = -1;
+double walltop = .9;
+double wallbottom = -.9;
 bool reachedXMax = false;
 bool reachedYMax = false;
 //------------------------------------------------------------------------------
