@@ -1202,7 +1202,6 @@
 		96FBA05C192DDA04003D819F /* 27-multiframes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "27-multiframes"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6F0E55221F7A80004D6B19 /* util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = "examples/GLFW/01-mydevice/util.cpp"; sourceTree = "<group>"; };
 		AF6F0E56221F7A80004D6B19 /* util.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = util.hpp; path = "examples/GLFW/01-mydevice/util.hpp"; sourceTree = "<group>"; };
-		AF6F0E582221FCF3004D6B19 /* CursorPosition.csv */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CursorPosition.csv; path = "examples/GLFW/01-mydevice/CursorPosition.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1967,7 +1966,6 @@
 				96D0117414E3720B00446A6B /* 01-mydevice.cpp */,
 				AF6F0E55221F7A80004D6B19 /* util.cpp */,
 				AF6F0E56221F7A80004D6B19 /* util.hpp */,
-				AF6F0E582221FCF3004D6B19 /* CursorPosition.csv */,
 			);
 			name = "01-mydevice";
 			sourceTree = "<group>";
