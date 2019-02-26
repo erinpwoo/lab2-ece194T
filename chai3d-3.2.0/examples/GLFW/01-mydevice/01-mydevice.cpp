@@ -164,12 +164,14 @@ int swapInterval = 1;
 
 /*BALL SHTUFF*/
 double velocity = .5;
-double wallleft = 1;
-double wallright = -1;
-double walltop = .9;
-double wallbottom = -.9;
+double wallleft = -1;
+double wallright = 1;
+double walltop = .8;
+double wallbottom = -.8;
 bool reachedXMax = false;
 bool reachedYMax = false;
+
+cToolCursor* tool;
 //------------------------------------------------------------------------------
 // DECLARED FUNCTIONS
 //------------------------------------------------------------------------------
@@ -365,11 +367,13 @@ int main(int argc, char* argv[])
     cursor->setLocalPos(0,0,-5);
     // insert cursor inside world
     world->addChild(cursor);
-    
     //sets paddle stiffness
     cursor->m_material->setStiffness(500);
+    cursor->createEffectSurface();
     
-    
+    //adding haptic tool point to world
+    tool = new cToolCursor(world);
+    world -> addChild(tool);
     
     /*BALL STUFF HERE*/
     
@@ -378,7 +382,8 @@ int main(int argc, char* argv[])
     world -> addChild(ball);
     
     ball->setLocalPos(0, 0, .5);
-    
+    ball->m_material->setStiffness(500);
+    ball->createEffectSurface();
     /*
     // create small line to illustrate the velocity of the haptic device
     velocity = new cShapeLine(cVector3d(0,0,0), 
@@ -420,7 +425,9 @@ int main(int argc, char* argv[])
     // if the device has a gripper, enable the gripper to simulate a user switch
     hapticDevice->setEnableGripperUserSwitch(true);
 
-
+    // attach haptic device to virtual tool
+    tool->setHapticDevice(hapticDevice);
+    
     //--------------------------------------------------------------------------
     // WIDGETS
     //--------------------------------------------------------------------------
@@ -497,11 +504,15 @@ int main(int argc, char* argv[])
 //------------------------------------------------------------------------------
 
 void ballMove() {
+    
+    //reachedXMax = false (moving right), true (moving left)
     if (ball->getLocalPos().y() > wallright) {
         reachedXMax = true;
     } else if (ball->getLocalPos().y() < wallleft) {
         reachedXMax = false;
     }
+    
+    
     
     if (ball->getLocalPos().z() > walltop) {
         reachedYMax = true;
@@ -510,16 +521,23 @@ void ballMove() {
     }
     
     double y = .001 * velocity;
+    double temp;
+    
+    
     if (reachedXMax) {
-        ball->setLocalPos(0, ball->getLocalPos().y() - y, ball->getLocalPos().z());
+        temp = ball->getLocalPos().y() - y;
+        ball->setLocalPos(0, temp, ball->getLocalPos().z());
     } else {
-        ball->setLocalPos(0, ball->getLocalPos().y() + y, ball->getLocalPos().z());
+        temp = ball->getLocalPos().y() + y;
+        ball->setLocalPos(0, temp, ball->getLocalPos().z());
     }
     
     if (reachedYMax) {
-        ball->setLocalPos(0, ball->getLocalPos().y(), ball->getLocalPos().z() - y);
+        temp = ball->getLocalPos().z() - y;
+        ball->setLocalPos(0, ball->getLocalPos().y(), temp);
     } else {
-        ball->setLocalPos(0, ball->getLocalPos().y(), ball->getLocalPos().z() + y);
+        temp = ball->getLocalPos().z() + y;
+        ball->setLocalPos(0, ball->getLocalPos().y(), temp);
     }
 }
 
@@ -726,6 +744,13 @@ void updateHaptics(void) //add recorded data capturing here
         hapticDevice->getUserSwitch(3, button3);
 
         ballMove();
+    
+        /*
+        world -> computeGlobalPositions(true);
+        tool->updateFromDevice();
+        tool->computeInteractionForces();
+        tool->applyToDevice();
+        */
         
         /*
         //export to csv file:
@@ -834,7 +859,7 @@ void updateHaptics(void) //add recorded data capturing here
             double Kp; //[N/m]
             cVector3d forceField;
             if ((position.y() > .05) || (position.y() < -.05) || (position.z() > -.01) || (position.z() < -.025)) {
-                Kp = -200;
+                Kp = -150;
             } else {
                 Kp = 0;
             }
@@ -857,7 +882,7 @@ void updateHaptics(void) //add recorded data capturing here
             cHapticDeviceInfo info = hapticDevice->getSpecifications();
 
             // compute linear damping force
-            double Kv = .5 * info.m_maxLinearDamping;
+            double Kv = .3 * info.m_maxLinearDamping;
             cVector3d forceDamping = -Kv * linearVelocity;
             force.add(forceDamping);
 
