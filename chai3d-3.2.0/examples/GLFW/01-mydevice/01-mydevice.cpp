@@ -130,7 +130,7 @@ cFontPtr font;
 cLabel* labelRates;
 
 // a flag for using damping (ON/OFF)
-bool useDamping = false;
+bool useDamping = true;
 
 // a flag for using force field (ON/OFF)
 bool useForceField = true;
@@ -511,15 +511,15 @@ void ballMove() {
     
     double y = .001 * velocity;
     if (reachedXMax) {
-        ball->setLocalPos(ball->getLocalPos().x(), ball->getLocalPos().y() - y, ball->getLocalPos().z());
+        ball->setLocalPos(0, ball->getLocalPos().y() - y, ball->getLocalPos().z());
     } else {
-        ball->setLocalPos(ball->getLocalPos().x(), ball->getLocalPos().y() + y, ball->getLocalPos().z());
+        ball->setLocalPos(0, ball->getLocalPos().y() + y, ball->getLocalPos().z());
     }
     
     if (reachedYMax) {
-        ball->setLocalPos(ball->getLocalPos().x(), ball->getLocalPos().y(), ball->getLocalPos().z() - y);
+        ball->setLocalPos(0, ball->getLocalPos().y(), ball->getLocalPos().z() - y);
     } else {
-        ball->setLocalPos(ball->getLocalPos().x(), ball->getLocalPos().y(), ball->getLocalPos().z() + y);
+        ball->setLocalPos(0, ball->getLocalPos().y(), ball->getLocalPos().z() + y);
     }
 }
 
@@ -726,12 +726,15 @@ void updateHaptics(void) //add recorded data capturing here
         hapticDevice->getUserSwitch(3, button3);
 
         ballMove();
+        
+        /*
         //export to csv file:
         
         cVector3d newPosition;
         hapticDevice->getForce(newPosition);
         fileOutStream << newPosition.x() << "," << aTimer.getCurrentTimeSeconds() << std::endl;
         std::cout << newPosition.x() << "," << newPosition.y() << "," << newPosition.z() << "," << aTimer.getCurrentTimeSeconds() << std::endl;
+         */
         
         /////////////////////////////////////////////////////////////////////
         // UPDATE 3D CURSOR MODEL
@@ -745,7 +748,6 @@ void updateHaptics(void) //add recorded data capturing here
         
         // update position and orientation of cursor
         cVector3d *pos = new cVector3d(position);
-        double x = pos->x();
         
         //z is (y), y is (x), x is (z)
         double y = pos->y();
@@ -759,8 +761,8 @@ void updateHaptics(void) //add recorded data capturing here
         if (position.z() < -.025) {
             z = -.025;
         }
-        pos->set(x, y, z);
-        cursor->setLocalPos(x*20, y*20, z*20);
+        pos->set(0, y, z);
+        cursor->setLocalPos(0, y*20, z*20);
         cursor->setLocalRot(rotation);
 
         // adjust the  color of the cursor according to the status of
@@ -796,7 +798,7 @@ void updateHaptics(void) //add recorded data capturing here
 
         // desired position
         cVector3d desiredPosition;  //set desired position to position detected by device
-        desiredPosition = newPosition;
+        desiredPosition = position;
 
         // desired orientation
         cMatrix3d desiredRotation;
@@ -812,8 +814,9 @@ void updateHaptics(void) //add recorded data capturing here
         {
             // compute linear force
             //ADJUSTING KP: AFFECTS STIFFNESS OF DEVICE AND HOW IT'S RESISTANCE TO BEING MOVED FROM ITS ORIGINAL POSITION (0,0,0)
-            
+
             //VIRTUAL WALL ALGORITHM:
+            /*
             double Kp; // [N/m]
             cVector3d forceField;
             if (position.y() < 0) { //y is the horizontal "x" axis
@@ -825,7 +828,19 @@ void updateHaptics(void) //add recorded data capturing here
             //forceField = 0;
             
             force.add(forceField);
-
+             */
+            
+            //Virtual walls for pong game:
+            double Kp; //[N/m]
+            cVector3d forceField;
+            if ((position.y() > .05) || (position.y() < -.05) || (position.z() > -.01) || (position.z() < -.025)) {
+                Kp = -200;
+            } else {
+                Kp = 0;
+            }
+            forceField = Kp * position;
+            force.add(forceField);
+            
             // compute angular torque
             double Kr = 0.05; // [N/m.rad]
             cVector3d axis;
@@ -842,7 +857,7 @@ void updateHaptics(void) //add recorded data capturing here
             cHapticDeviceInfo info = hapticDevice->getSpecifications();
 
             // compute linear damping force
-            double Kv = 2 * info.m_maxLinearDamping;
+            double Kv = .5 * info.m_maxLinearDamping;
             cVector3d forceDamping = -Kv * linearVelocity;
             force.add(forceDamping);
 
