@@ -363,7 +363,7 @@ int main(int argc, char* argv[])
     light->setDir(-1.0, 0.0, 0.0);
 
     // create a box (cursor) to represent the haptic device
-    cursor = new cShapeBox(0.1, 0.25, 0.03);
+    cursor = new cShapeBox(1, 0.25, 0.03);
     cursor->setLocalPos(0,0,-5);
     // insert cursor inside world
     world->addChild(cursor);
@@ -372,9 +372,15 @@ int main(int argc, char* argv[])
     cursor->createEffectSurface();
     
     //adding haptic tool point to world
+    
     tool = new cToolCursor(world);
     world -> addChild(tool);
+    tool -> setLocalPos(cursor->getLocalPos());
+    tool ->setRadius(.01);
+    tool->enableDynamicObjects(true);
+    tool->setWaitForSmallForce(true);
     
+    tool->start();
     /*BALL STUFF HERE*/
     
     //adding ball to scene
@@ -695,6 +701,23 @@ void updateGraphics(void)
 
 void updateHaptics(void) //add recorded data capturing here
 {
+    /*
+    cGenericCollision collision;
+    cVector3d p1(cursor->getLocalPos().x(), cursor->getLocalPos().y() - .125, cursor->getLocalPos().z());
+    cVector3d p2(cursor->getLocalPos().x(), cursor->getLocalPos().y() + .125, cursor->getLocalPos().z());
+    cCollisionRecorder c;
+    cCollisionSettings s;
+    
+    if (collision.computeCollision(ball, p1, p2, c, s)) {
+        reachedYMax = !reachedYMax;
+     }*/
+    /*
+    double cursorL = cursor->getLocalPos().y() - .125;
+    double cursorR = cursor->getLocalPos().y() + .125;
+
+    if ((ball->getLocalPos().y() > cursorL) && (ball->getLocalPos().y() < cursorR)) {
+        reachedYMax = !reachedYMax;
+    }*/
     
     // simulation in now running
     simulationRunning  = true;
@@ -745,12 +768,11 @@ void updateHaptics(void) //add recorded data capturing here
 
         ballMove();
     
-        /*
-        world -> computeGlobalPositions(true);
-        tool->updateFromDevice();
+        tool -> setLocalPos(ball->getLocalPos());
+        /*world -> computeGlobalPositions(true);
+        //tool->updateFromDevice();
         tool->computeInteractionForces();
-        tool->applyToDevice();
-        */
+        tool->applyToDevice();*/
         
         /*
         //export to csv file:
@@ -789,7 +811,6 @@ void updateHaptics(void) //add recorded data capturing here
         pos->set(0, y, z);
         cursor->setLocalPos(0, y*20, z*20);
         cursor->setLocalRot(rotation);
-
         // adjust the  color of the cursor according to the status of
         // the user-switch (ON = TRUE / OFF = FALSE)
         if (button0)
@@ -816,11 +837,10 @@ void updateHaptics(void) //add recorded data capturing here
         // update global variable for graphic display update
         hapticDevicePosition = position;
 
-
         /////////////////////////////////////////////////////////////////////
         // COMPUTE AND APPLY FORCES
         /////////////////////////////////////////////////////////////////////
-
+        
         // desired position
         cVector3d desiredPosition;  //set desired position to position detected by device
         desiredPosition = position;
